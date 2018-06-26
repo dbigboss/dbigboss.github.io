@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
     // make N by M Grid when form is submitted
     $('#sizePicker').submit(function makeGrid(grid) {
         $('table tr').remove(); //Clears grid
@@ -29,4 +29,4 @@ $(document).ready(function() {
             }
         });
     });
-});
+// });
