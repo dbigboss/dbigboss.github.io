@@ -1,9 +1,9 @@
-const cacheName = 'current';
+const cacheName = 'current1';
 
 const cacheAssets = [
   'index.html',
-  './styles/index.css',
-  './js/sw.js'
+  'style.css',
+  'sw.js'
 ]
 
 self.addEventListener('install', (e) => {
