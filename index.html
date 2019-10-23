@@ -25,7 +25,21 @@
             <h2>Design Canvas</h2>
             <table id="pixelCanvas"></table>
         </div>
+        <script>
+            // if supported
+            if ('serviceWorker' in navigator) {
+              // console.log('Service Worker supported');
+              window.addEventListener('load', () => {
+                navigator.serviceWorker
+                  .register('./sw.js')
+                  .then(reg => console.log('Service Worker: Registered'))
+                  .catch(err => console.log(`Sevice Worker Error: ${err}`))
+              })
+
+            }
+        </script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="designs.js"></script>
+        <script src="sw.js"></script>
     </body>
 </html>
