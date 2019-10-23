@@ -2,7 +2,7 @@ const cacheName = 'current1';
 
 const cacheAssets = [
   'index.html',
-  'style.css',
+  'styles.css',
   'sw.js'
 ]
 
